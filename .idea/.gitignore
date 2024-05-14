@@ -4,3 +4,7 @@
 /vcs.xml
 /gradle.xml
 /inspectionProfiles
+/compiler.xml
+/kotlinc.xml
+/jarRepositories.xml
+/misc.xml
