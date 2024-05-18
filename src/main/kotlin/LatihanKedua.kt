@@ -5,7 +5,7 @@ fun main(){
      * val digunakan untuk mendeklarasikan variabel yang nilainya tidak bisa diubah
      * setelah dideklarasikan. Variabel ini mirip dengan final di Java.
      *
-     * @author Dwi Prasetya
+     * @author: Dwi Prasetya
      * */
 
     val name = "Dwi" //Variabel yang hanya dapat dibaca bertipe String
