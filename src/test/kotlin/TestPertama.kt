@@ -1,50 +1,24 @@
-fun main() {
-    // Menggunakan println untuk mencetak teks dan berpindah ke baris baru
-    println("Hello, World!")
-    println("Selamat datang di belajar Kotlin.")
+import com.google.common.truth.Truth.assertThat
+import org.junit.jupiter.api.Test
 
-    // Menggunakan print untuk mencetak teks tanpa berpindah ke baris baru
-    print("Ini adalah contoh ")
-    print("menggunakan print ")
-    print("tanpa baris baru.\n")
-
-    // Kombinasi penggunaan print dan println
-    println("Kombinasi print dan println:")
-    print("Baris pertama menggunakan print.")
-    println("Baris kedua menggunakan println.")
-    print("Baris ketiga menggunakan print.")
-    println("Baris keempat menggunakan println.")
-
-    // Menggunakan println untuk mencetak angka
-    println(123)
-    println(456.789)
-
-    // Menggunakan print untuk mencetak beberapa angka dalam satu baris
-    print(1)
-    print(" + ")
-    print(2)
-    print(" = ")
-    println(1 + 2)
-
-    // Menggunakan println untuk mencetak operasi matematika
-    println("5 * 3 = " + (5 * 3))
-    println("10 / 2 = " + (10 / 2))
-    println("15 - 4 = " + (15 - 4))
-    println("7 + 8 = " + (7 + 8))
-
-    // Mencetak string dengan escape sequences
-    println("Ini adalah baris pertama.\nIni adalah baris kedua.")
-    println("Tab\tberikutnya.")
-    println("Backslash: \\")
-
-    // Mencetak kutipan di dalam string
-    println("Kata orang bijak, \"Belajar itu sepanjang hayat.\"")
-    println("Karakter 'a' adalah huruf kecil.")
-
-    // Menggunakan print untuk mencetak beberapa hal dalam satu baris
-    print("A")
-    print("B")
-    print("C")
-    print("D")
-    println("E")
+/**
+ * Kelas ini digunakan untuk menguji kelas LatihanPertama.
+ *
+ * @author: Dwi Prasetya
+ */
+class TestPertama {
+    /**
+     * Metode pengujian ini memeriksa apakah fungsi showingPrint dari kelas LatihanPertama
+     * berjalan dengan sukses dan mengembalikan hasil yang tidak null serta bertipe Unit.
+     *
+     * Kasus uji ini memastikan bahwa showingPrint tidak mengembalikan nilai kosong (null)
+     * dan memastikan bahwa tipe yang dikembalikan adalah Unit.
+     */
+    @Test
+    fun `showing print success (case not Empty)`() = run {
+        val latihanPertama = LatihanPertama()
+        val result = latihanPertama.showingPrint
+        assertThat(result).isNotNull()
+        assertThat(result).isInstanceOf(Unit::class.java)
+    }
 }
