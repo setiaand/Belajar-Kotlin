@@ -1,21 +1,58 @@
-fun main(){
-    /* *
-     * Penggunaan val (Read-Only Variabel)
-     *
-     * val digunakan untuk mendeklarasikan variabel yang nilainya tidak bisa diubah
-     * setelah dideklarasikan. Variabel ini mirip dengan final di Java.
-     *
-     * @author: Dwi Prasetya
-     * */
+/**
+ * Kelas LatihanKedua berisi fungsi-fungsi untuk menampilkan data seperti nama dan umur.
+ *
+ * @author Dwi Prasetya
+ * @since 1.0
+ * @version 1.0
+ */
+class LatihanKedua {
 
-    val name = "Dwi" //Variabel yang hanya dapat dibaca bertipe String
-    println(name) //Output: Dwi
+    companion object {
 
-     // name = "Duwai" // ini akan menyebabkan error saat kompilasi
+        /**
+         * Menampilkan nama yang diberikan.
+         *
+         * @param valueName Nama yang akan ditampilkan. Nilai default adalah string kosong.
+         * @sample LatihanKedua.Companion.showingDataName("John Doe")
+         * @throws IllegalArgumentException jika valueName berisi karakter tidak valid.
+         */
+        fun showingDataName(valueName: String = "") {
+            // valueName = "Value Baru" ini akan menyebabkan error saat kompilasi
 
-    val age = 25 // Variabel yang hanya dapat dibaca bertipe Int
-    println(age) //Output: 25
+            println("Nama: $valueName")
+        }
 
-    // age = 26 // Ini akan menyebabkan error saat kompilasi
+        /**
+         * Menampilkan umur yang diberikan.
+         *
+         * @param valueAge Umur yang akan ditampilkan. Nilai default adalah 0.
+         * @sample LatihanKedua.Companion.showingDataAge(25)
+         * @throws IllegalArgumentException jika valueAge negatif.
+         */
+        fun showingDataAge(valueAge: Int = 0) {
 
+            // valueAge = 27 ini akan menyebabkan error saat kompilasi
+
+            println("Age: $valueAge")
+        }
+
+        /**
+         * Menjalankan semua fungsi di dalam kelas LatihanKedua.
+         *
+         * @sample LatihanKedua.Companion.runAll()
+         */
+        fun runAll() {
+            showingDataName()
+            showingDataAge()
+        }
+    }
+}
+
+/**
+ * Fungsi main untuk menjalankan LatihanKedua.
+ *
+ * @sample main()
+ */
+fun main() {
+    LatihanKedua.runAll()
 }
