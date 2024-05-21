@@ -1,21 +1,31 @@
-fun main(){
-    /* *
-     * Penggunaan val (Read-Only Variabel)
-     *
-     * val digunakan untuk mendeklarasikan variabel yang nilainya tidak bisa diubah
-     * setelah dideklarasikan. Variabel ini mirip dengan final di Java.
-     *
-     * @author: Dwi Prasetya
-     * */
+import com.google.common.truth.Truth.assertThat
+import org.junit.jupiter.api.Test
 
-    val name = "Dwi" //Variabel yang hanya dapat dibaca bertipe String
-    println(name) //Output: Dwi
+class TestKedua {
 
-    // name = "Duwai" // ini akan menyebabkan error saat kompilasi
+    @Test
+    fun `test not empty variable name`() = run {
+        val name = LatihanKedua.showingDataName("Dwi Prasetya")
+        assertThat(name).isNotEmpty()
+        assertThat(name).isInstanceOf(String::class.java)
+    }
 
-    val age = 25 // Variabel yang hanya dapat dibaca bertipe Int
-    println(age) //Output: 25
+    @Test
+    fun `test empty variable name`() = run {
+        val name = LatihanKedua.showingDataName()
+        assertThat(name).isEmpty()
+        assertThat(name).isInstanceOf(String::class.java)
+    }
 
-    // age = 26 // Ini akan menyebabkan error saat kompilasi
+    @Test
+    fun `test not empty variable age`() = run {
+        val age = LatihanKedua.showingDataAge(27)
+        assertThat(age).isNotNull()
+    }
 
+    @Test
+    fun `test empty variable age`() = run {
+        val age = LatihanKedua.showingDataAge()
+        assertThat(age).isNotNull()
+    }
 }
