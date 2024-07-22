@@ -16,8 +16,8 @@ class TestPertama {
      */
     @Test
     fun `showing print success (case not Empty)`() = run {
-        val latihanPertama = LatihanPertama()
-        val result = latihanPertama.showingPrint
+        val displayPrint = DisplayPrint()
+        val result = displayPrint.showingPrint
         assertThat(result).isNotNull()
         assertThat(result).isInstanceOf(Unit::class.java)
     }

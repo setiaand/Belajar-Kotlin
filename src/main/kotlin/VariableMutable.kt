@@ -1,7 +1,7 @@
 /**
  * Objek yang berisi contoh penggunaan variabel mutable (var) dalam berbagai konteks.
  */
-object LatihanKeduabelas {
+object VariableMutable {
 
     /**
      * Menunjukkan penggunaan variabel mutable dengan operasi aritmatika.
@@ -108,9 +108,9 @@ object LatihanKeduabelas {
  * Fungsi utama untuk menjalankan contoh penggunaan variabel mutable.
  */
 fun main() {
-    LatihanKeduabelas.mutableArithmetic()
-    LatihanKeduabelas.mutableStrings()
-    LatihanKeduabelas.mutableList()
-    LatihanKeduabelas.mutableMap()
-    LatihanKeduabelas.mutableDataClass()
+    VariableMutable.mutableArithmetic()
+    VariableMutable.mutableStrings()
+    VariableMutable.mutableList()
+    VariableMutable.mutableMap()
+    VariableMutable.mutableDataClass()
 }

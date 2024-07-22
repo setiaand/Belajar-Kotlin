@@ -1,4 +1,4 @@
-class LatihanPertama{
+class DisplayPrint{
     val showingPrint = showingPrint()
 }
 

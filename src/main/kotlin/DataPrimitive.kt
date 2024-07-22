@@ -8,7 +8,7 @@
  * @version 1.0
  * @author [Dwi Prasetya]
  */
-class LatihanKeempat {
+class DataPrimitive {
     companion object {
         /**
          * Contoh penggunaan tipe data Byte.
@@ -123,5 +123,5 @@ class LatihanKeempat {
 }
 
 fun main() {
-    LatihanKeempat.runAllExamples()
+    DataPrimitive.runAllExamples()
 }

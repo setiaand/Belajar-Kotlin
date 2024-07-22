@@ -1,7 +1,7 @@
 /**
  * Contoh penggunaan range dalam Kotlin.
  */
-object LatihanKetujubelas {
+object Range {
 
     /**
      * Menampilkan semua bilangan dalam rentang dari 1 hingga 10.
@@ -55,13 +55,13 @@ object LatihanKetujubelas {
 }
 
 fun main() {
-    LatihanKetujubelas.intRangeExample()
+    Range.intRangeExample()
     println("----")
-    LatihanKetujubelas.charRangeExample()
+    Range.charRangeExample()
     println("----")
-    LatihanKetujubelas.longRangeExample()
+    Range.longRangeExample()
     println("----")
-    LatihanKetujubelas.stepRangeExample()
+    Range.stepRangeExample()
     println("----")
-    LatihanKetujubelas.downToRangeExample()
+    Range.downToRangeExample()
 }

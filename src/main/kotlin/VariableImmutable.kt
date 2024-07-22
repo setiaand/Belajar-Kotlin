@@ -1,7 +1,7 @@
 /**
  * Objek yang berisi contoh penggunaan variabel immutable (val) dalam berbagai konteks.
  */
-object LatihanKetigabelas {
+object VariableImmutable {
 
     /**
      * Menunjukkan penggunaan variabel immutable dengan operasi aritmatika.
@@ -86,9 +86,9 @@ object LatihanKetigabelas {
  * Fungsi utama untuk menjalankan contoh penggunaan variabel immutable.
  */
 fun main() {
-    LatihanKetigabelas.immutableArithmetic()
-    LatihanKetigabelas.immutableStrings()
-    LatihanKetigabelas.immutableList()
-    LatihanKetigabelas.immutableMap()
-    LatihanKetigabelas.immutableDataClass()
+    VariableImmutable.immutableArithmetic()
+    VariableImmutable.immutableStrings()
+    VariableImmutable.immutableList()
+    VariableImmutable.immutableMap()
+    VariableImmutable.immutableDataClass()
 }

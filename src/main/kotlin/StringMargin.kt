@@ -1,7 +1,7 @@
 /**
  * Objek yang berisi fungsi-fungsi untuk berbagai operasi string yang melibatkan margin dan pemotongan.
  */
-object LatihanKesepuluh {
+object StringMargin {
 
     /**
      * Menghapus margin dari string yang memiliki simbol margin khusus di awal setiap baris.

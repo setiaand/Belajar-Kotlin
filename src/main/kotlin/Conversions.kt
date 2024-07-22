@@ -4,11 +4,11 @@
  * Fungsi-fungsi ini menyediakan konversi umum tipe data, seperti mengubah string menjadi integer atau double,
  * dan integer menjadi double, dengan penanganan kesalahan untuk konversi yang tidak valid.
  *
- * @property ConversionUtils Objek utilitas yang berisi fungsi-fungsi konversi.
+ * @property Convertions Objek utilitas yang berisi fungsi-fungsi konversi.
  * @since 2024-06-03
  * @version 1.0
  */
-object ConversionUtils {
+object Convertions {
 
     /**
      * Mengonversi sebuah [String] menjadi [Int].
@@ -134,37 +134,37 @@ fun main() {
 
     // String ke Int
     println("String ke Int:")
-    println("Konversi valid: ${ConversionUtils.stringToInt(str)}") // Output: 123
-    println("Konversi tidak valid: ${ConversionUtils.stringToInt(invalidStr)}") // Output: null
+    println("Konversi valid: ${Convertions.stringToInt(str)}") // Output: 123
+    println("Konversi tidak valid: ${Convertions.stringToInt(invalidStr)}") // Output: null
 
     // String ke Double
     println("\nString ke Double:")
-    println("Konversi valid: ${ConversionUtils.stringToDouble(str)}") // Output: 123.0
-    println("Konversi tidak valid: ${ConversionUtils.stringToDouble(invalidStr)}") // Output: null
+    println("Konversi valid: ${Convertions.stringToDouble(str)}") // Output: 123.0
+    println("Konversi tidak valid: ${Convertions.stringToDouble(invalidStr)}") // Output: null
 
     // Int ke Double
     println("\nInt ke Double:")
-    println("Konversi: ${ConversionUtils.intToDouble(intNumber)}") // Output: 42.0
+    println("Konversi: ${Convertions.intToDouble(intNumber)}") // Output: 42.0
 
     // Double ke String
     println("\nDouble ke String:")
-    println("Konversi: ${ConversionUtils.doubleToString(doubleNumber)}") // Output: "42.42"
+    println("Konversi: ${Convertions.doubleToString(doubleNumber)}") // Output: "42.42"
 
     // String ke Float
     println("\nString ke Float:")
-    println("Konversi valid: ${ConversionUtils.stringToFloat(str)}") // Output: 123.0
-    println("Konversi tidak valid: ${ConversionUtils.stringToFloat(invalidStr)}") // Output: null
+    println("Konversi valid: ${Convertions.stringToFloat(str)}") // Output: 123.0
+    println("Konversi tidak valid: ${Convertions.stringToFloat(invalidStr)}") // Output: null
 
     // Float ke String
     println("\nFloat ke String:")
-    println("Konversi: ${ConversionUtils.floatToString(floatNumber)}") // Output: "42.42"
+    println("Konversi: ${Convertions.floatToString(floatNumber)}") // Output: "42.42"
 
     // String ke Long
     println("\nString ke Long:")
-    println("Konversi valid: ${ConversionUtils.stringToLong(str)}") // Output: 123
-    println("Konversi tidak valid: ${ConversionUtils.stringToLong(invalidStr)}") // Output: null
+    println("Konversi valid: ${Convertions.stringToLong(str)}") // Output: 123
+    println("Konversi tidak valid: ${Convertions.stringToLong(invalidStr)}") // Output: null
 
     // Long ke String
     println("\nLong ke String:")
-    println("Konversi: ${ConversionUtils.longToString(longNumber)}") // Output: "123456789"
+    println("Konversi: ${Convertions.longToString(longNumber)}") // Output: "123456789"
 }

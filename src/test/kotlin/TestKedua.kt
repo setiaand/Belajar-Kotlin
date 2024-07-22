@@ -5,27 +5,27 @@ class TestKedua {
 
     @Test
     fun `test not empty variable name`() = run {
-        val name = LatihanKedua.showingDataName("Dwi Prasetya")
+        val name = DisplayData.showingDataName("Dwi Prasetya")
         assertThat(name).isNotEmpty()
         assertThat(name).isInstanceOf(String::class.java)
     }
 
     @Test
     fun `test empty variable name`() = run {
-        val name = LatihanKedua.showingDataName()
+        val name = DisplayData.showingDataName()
         assertThat(name).isEmpty()
         assertThat(name).isInstanceOf(String::class.java)
     }
 
     @Test
     fun `test not empty variable age`() = run {
-        val age = LatihanKedua.showingDataAge(27)
+        val age = DisplayData.showingDataAge(27)
         assertThat(age).isNotNull()
     }
 
     @Test
     fun `test empty variable age`() = run {
-        val age = LatihanKedua.showingDataAge()
+        val age = DisplayData.showingDataAge()
         assertThat(age).isNotNull()
     }
 }

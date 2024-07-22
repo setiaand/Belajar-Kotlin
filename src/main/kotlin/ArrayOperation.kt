@@ -1,7 +1,7 @@
 /**
  * Kelas LatihanKeEnamBelas menyediakan operasi dasar pada array.
  */
-class LatihanKeEnamBelas {
+class ArrayOperation {
 
     /**
      * Membuat array dari tipe Int dengan nilai awal.
@@ -120,7 +120,7 @@ class LatihanKeEnamBelas {
 
 // Main function untuk pengujian manual
 fun main() {
-    val arrayOps = LatihanKeEnamBelas()
+    val arrayOps = ArrayOperation()
 
     val intArray = arrayOps.createIntArray(1, 2, 3, 4, 5)
     val stringArray = arrayOps.createStringArray("Kotlin", "Java", "Swift")
