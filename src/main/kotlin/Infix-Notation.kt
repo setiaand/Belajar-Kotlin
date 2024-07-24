@@ -21,11 +21,11 @@ class InfixNotationCalculator {
         return this.value * other
     }
 
-    var value: Int = 0
-
     infix fun minus(other: Int): Int {
         return this.value - other
     }
+
+    var value: Int = 0
 }
 
 fun main() {
@@ -39,5 +39,5 @@ fun main() {
 
     println("Sum: $sum") // Output: Sum: 8
     println("Product: $product") // Output: Product: 10
-    println("Minus: $minus") //Output: Minus:
+    println("Minus: $minus") //Output: Minus: 2
 }
