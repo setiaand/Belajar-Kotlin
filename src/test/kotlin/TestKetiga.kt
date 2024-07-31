@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test
  *
  * @since 1.0
  * @version 1.0
- * @source LatihanKetiga.kt
+ * @source VarSample.kt
  * @author Dwi Prsetya
  */
 class TestKetiga {
@@ -25,8 +25,8 @@ class TestKetiga {
      */
     @Test
     fun `test empty message`() {
-        val message = LatihanKetiga.message
-        val sendMessage = LatihanKetiga.sendMessage("")
+        val message = VarSample.message
+        val sendMessage = VarSample.sendMessage("")
         assertThat(message).isEmpty()
         assertThat(sendMessage).isEmpty()
         assertThat(message).isInstanceOf(String::class.java)
@@ -44,8 +44,8 @@ class TestKetiga {
      */
     @Test
     fun `test not empty message`() {
-        val sendMessage = LatihanKetiga.sendMessage("Dwi")
-        val message = LatihanKetiga.message
+        val sendMessage = VarSample.sendMessage("Dwi")
+        val message = VarSample.message
         assertThat(message).isNotEmpty()
         assertThat(sendMessage).isNotEmpty()
         assertThat(message).isInstanceOf(String::class.java)

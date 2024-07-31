@@ -1,7 +1,7 @@
 /**
  * Kelas LatihanKetujuh berisi fungsi untuk menampilkan dan mengembalikan karakter.
  */
-object LatihanKetujuh  {
+object Character  {
 
     /**
      * Menampilkan dan mengembalikan karakter yang diberikan.

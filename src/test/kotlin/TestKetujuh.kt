@@ -6,7 +6,7 @@ class TestKetujuh {
 
     @Test
     fun `test display character` () = run {
-        val char = LatihanKetujuh.displayCharacter('A')
+        val char = Character.displayCharacter('A')
 
         assertThat(char).isNotNull()
         assertThat(char).isEqualTo('A')
@@ -14,7 +14,7 @@ class TestKetujuh {
 
     @Test
     fun `test display escape sequence`() = run {
-        val char = LatihanKetujuh.displayEscapeSequence(
+        val char = Character.displayEscapeSequence(
             newLineChar = '\n',
             tabChar = '\t',
             backslashChar = '\\'
@@ -25,7 +25,7 @@ class TestKetujuh {
 
     @Test
     fun `test display manipulation char`() = run {
-        val char = LatihanKetujuh.displayManipulationChar(
+        val char = Character.displayManipulationChar(
             charLower = 'a',
             charUpper = 'A'
         )
@@ -35,7 +35,7 @@ class TestKetujuh {
 
     @Test
     fun `display type checker`() = run {
-        val  char = LatihanKetujuh.displayTypeChecker(
+        val  char = Character.displayTypeChecker(
             charDigit = '3',
             charLetter = 'A',
             charWhitespace = ' '

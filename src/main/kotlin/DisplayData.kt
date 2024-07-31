@@ -5,7 +5,7 @@
  * @since 1.0
  * @version 1.0
  */
-class LatihanKedua {
+class DisplayData {
 
     companion object {
 
@@ -13,7 +13,7 @@ class LatihanKedua {
          * Menampilkan nama yang diberikan.
          *
          * @param valueName Nama yang akan ditampilkan. Nilai default adalah string kosong.
-         * @sample LatihanKedua.Companion.showingDataName("John Doe")
+         * @sample DisplayData.Companion.showingDataName("John Doe")
          * @throws IllegalArgumentException jika valueName berisi karakter tidak valid.
          */
         fun showingDataName(valueName: String = ""): String {
@@ -28,7 +28,7 @@ class LatihanKedua {
          * Menampilkan umur yang diberikan.
          *
          * @param valueAge Umur yang akan ditampilkan. Nilai default adalah 0.
-         * @sample LatihanKedua.Companion.showingDataAge(25)
+         * @sample DisplayData.Companion.showingDataAge(25)
          * @throws IllegalArgumentException jika valueAge negatif.
          */
         fun showingDataAge(valueAge: Int = 0): Int {
@@ -44,7 +44,7 @@ class LatihanKedua {
         /**
          * Menjalankan semua fungsi di dalam kelas LatihanKedua.
          *
-         * @sample LatihanKedua.Companion.runAll()
+         * @sample DisplayData.Companion.runAll()
          */
         fun runAll() {
             showingDataName()
@@ -59,5 +59,5 @@ class LatihanKedua {
  * @sample main()
  */
 fun main() {
-    LatihanKedua.runAll()
+    DisplayData.runAll()
 }

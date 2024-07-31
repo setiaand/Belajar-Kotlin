@@ -1,7 +1,7 @@
 /**
  * Object yang berisi fungsi untuk menampilkan dan mengembalikan nilai boolean.
  */
-object LatihanKedelapan {
+object Booleans {
 
     /**
      * Menampilkan nilai boolean yang benar (true) dan mengembalikan nilai tersebut.

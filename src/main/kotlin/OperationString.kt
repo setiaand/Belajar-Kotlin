@@ -1,7 +1,7 @@
 /**
 * Objek yang berisi fungsi-fungsi untuk berbagai operasi string.
 */
-object LatihanSembilan {
+object OperationString {
 
     /**
      * Menggabungkan dua string menjadi satu.

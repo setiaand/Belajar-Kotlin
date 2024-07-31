@@ -1,7 +1,7 @@
 /**
  * Objek yang berisi fungsi-fungsi untuk berbagai metode penggabungan string.
  */
-object LatihanKesebelas {
+object StringMerger {
 
     /**
      * Menggabungkan dua string menggunakan operator plus (+).

@@ -8,7 +8,7 @@
  * @since 1.0
  * @source Dokumentasi resmi Kotlin: https://kotlinlang.org/docs/reference/basic-types.html#literal-constants
  */
-class LatihanKelima {
+class Literals {
 
     companion object {
 
@@ -252,5 +252,5 @@ class LatihanKelima {
  * Fungsi utama untuk menjalankan semua contoh literals.
  */
 fun main() {
-    LatihanKelima.runAll()
+    Literals.runAll()
 }

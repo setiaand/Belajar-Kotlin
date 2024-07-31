@@ -4,7 +4,7 @@
  * @since 1.0
  * @author Dwi Prasetya
  */
-class LatihanKetiga {
+class VarSample {
 
     companion object {
 
@@ -43,6 +43,6 @@ class LatihanKetiga {
  * @since 1.0
  */
 fun main() {
-    LatihanKetiga.message = "Hi "
-    LatihanKetiga.sendMessage(newValue = "Dwi")
+    VarSample.message = "Hi "
+    VarSample.sendMessage(newValue = "Dwi")
 }
